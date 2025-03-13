@@ -1,7 +1,7 @@
 // src/services/api.ts
 import axios from 'axios';
 
-const API_BASE_URL = import.meta.env.VITE_BACKEND || 'http://localhost:5000';
+const API_BASE_URL = import.meta.env.VITE_BACKEND || 'https://claimpro.onrender.com' || 'http://localhost:5000';
 
 const setAuthToken = (token: string | null): void => {
   if (token) {
